@@ -18,7 +18,7 @@ function showTimeAndWeather() {
 	let weather = `Weather`;
 	document.getElementById(
 		"date"
-	).innerHTML = `${today} | ${hour}:${minute}:${second} | ${icon}&nbsp;&nbsp;${temperature}°`;
+	).innerHTML = `${today} | ${hour}:${minute}:${second} | <span class="icon">${icon}</span>&nbsp;&nbsp;${temperature}°`;
 	setTimeout(showTimeAndWeather, 0);
 }
 
@@ -97,7 +97,7 @@ function updateWeatherChar(input) {
 function createWeatherMap() {
 	
 	    const charCodeMap = new Map([
-		['01d', ''], // clear sky day
+		['01d', ''], // clear sky day
         ['01n', ''], // clear sky night
 		['02d', ''], // a few clouds day
         ['02n', ''], // a few clouds night
