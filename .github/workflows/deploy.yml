@@ -1,10 +1,9 @@
 name: Deploy Jekyll site to GitHub Pages
 
-# Trigger the workflow on push to the main branch
 on:
   push:
     branches:
-      - master  # Change this if you're deploying from a different branch
+      - master
 
 jobs:
   build-and-deploy:
@@ -36,5 +35,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         publish_dir: ./_site
