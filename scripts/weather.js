@@ -1,9 +1,9 @@
-var apiKey = "{{ site.openweather_api_key }}";
+var apiKey = "7e91452312aa8237e0ef35bd2093bf33";
 const apiBaseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 const fallbackCoordinates = {
-    latitude: "{{ site.fallback_latitude }}",
-    longitude: "{{ site.fallback_longitude }}"
+    latitude: "48.2088056°",
+    longitude: "016.3725278°"
 };
 
 
