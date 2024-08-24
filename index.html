@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~/startpage</title>
+    <link rel="stylesheet" href="static/styles/styles.css">
+	<link rel="icon" href="static/images/favicon.svg" type="image/svg+xml">
+	<script src="scripts/search_form.js"></script>
+	<script src="scripts/weather.js"></script>
+</head>
+<body>
+	<nav>
+		<h1>Welcome back!</h1>
+		<h2 id="date"></h2>
+		<form id="duckduckgo-search-form" action="https://duckduckgo.com/" method="get">
+			<input type="text" name="q" placeholder="Search with DuckDuckGo" autofocus>
+		</form>
+		<script type="text/javascript" src="scripts/get_date.js"></script>
+	
+		<ul>
+			<li>~/common </li>
+			<li><a href="https://www.youtube.com/">Youtube</a></li>
+			<li><a href="https://www.twitch.tv/">Twitch</a></li>
+			<li><a href="https://reddit.com/">reddit</a></li>
+		</ul>
+		<ul>
+			<li>~/dev </li>
+			<li><a href="https://github.com/">GitHub</a></li>
+			<li><a href="https://devdocs.io/">Devdocs</a></li>
+		</ul>
+		<ul>
+			<li>~/pastime </li>
+			<li><a href="https://myanimelist.net/">MAL</a></li>
+			<li><a href="https://aniwave.to/home">Anime</a></li>
+			<li><a href="https://s.to/">Series</a></li>
+			<li><a href="https://ridomovies.tv/">Movies</a></li>
+		</ul>
+	</nav>
+	
+	<div class="image">
+			<a href="https://github.com/EdgeLordKirito"><img alt="fem" src="static/images/img.webp"></a>
+	</div>
+	
+	<script src="scripts/toggleNav.js"></script>
+	
+	<button class="openbtnlefttop" onclick="toggleNav()">&#9776;</button>
+	<button class="openbtnleftbottom" onclick="toggleNav()">&#9776;</button>
+	<button class="openbtnrighttop" onclick="toggleNavright()">&#9776;</button>
+	<button class="openbtnrightbottom" onclick="toggleNavright()">&#9776;</button>
+	
+	<!-- Left Sidebar -->
+	<div id="mySidepanel" class="sidepanel">
+		<!-- Fill with rarely used Shortcuts -->
+		<!-- in form <li><a href="link">DisplayName</a></li> -->
+	</div>
+	<!-- Right Sidebar -->
+	<div id="SidepanelRight" class="sidepanelright">
+		<!-- Fill with rarely used Shortcuts -->
+		<!-- in form <li><a href="link">DisplayName</a></li> -->
+	</div>
+	<script src="scripts/limitListElements.js"></script>
+</body>
+</html>
