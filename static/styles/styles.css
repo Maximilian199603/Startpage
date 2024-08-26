@@ -15,7 +15,9 @@
 
 @font-face {
     font-family: "default-font";
-    src: url("../fonts/hack.ttf");
+    src: url("../fonts/HackNF-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
